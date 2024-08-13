@@ -1,4 +1,4 @@
-@import url(/reset.css);
+@import url(./reset.css);
 
 :root{
     --Dark-cyan: hsl(158, 36%, 37%);
@@ -11,11 +11,11 @@
 }
 @font-face {
     font-family: 'fraunces';
-    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+    src: url(./fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
 @font-face {
     font-family: 'montserrat';
-    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 body{
     background-color: var(--Cream);
