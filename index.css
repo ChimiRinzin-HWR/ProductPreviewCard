@@ -1,0 +1,95 @@
+@import url(/reset.css);
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%)
+
+}
+@font-face {
+    font-family: 'fraunces';
+    src: url(/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+body{
+    background-color: var(--Cream);
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    max-width: 40rem;
+    min-width: 40rem;
+}
+.image{
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 10px 0px 0px 10px;
+}
+.info{
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+    max-width: 20rem;
+    padding: 2rem 2rem;
+    font-family: 'fraunces';
+    p{
+        font-family: 'montserrat';
+        font-weight: 500;
+        color: gray;
+        font-size: 15px;
+        line-height: 1.5rem;
+    }
+    .heading{
+        font-variant-caps:all-petite-caps;
+        letter-spacing: 0.4rem;
+        margin: 0;
+    }
+    h1{
+        font-size: 2.2rem;
+        line-height: 2.1rem;
+        margin:1.8rem 0;
+    }
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    h1{
+        color: var(--Dark-cyan);
+    }
+    s{
+        font-family: 'montserrat';
+        font-size:14px;
+        color: var(--Dark-grayish-blue);
+        font-weight: 500
+    }
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    border-radius: 8px;
+    height: 3rem;
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 14px
+}
+.button:hover{
+    background-color: var(--Very-dark-blue);
+    cursor:pointer;
+}
